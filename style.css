@@ -1,0 +1,196 @@
+@charset "utf8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cajonPrincipal{
+    width: 90vw;
+    height: 90vh;
+    border: 5px solid green;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#cajaDado{
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    justify-content: center;
+    transform: rotateY(60deg);
+}
+.cara{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 120px;
+    border-radius: 30px;
+    border: 1px solid white;
+
+}
+
+.cara >div{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    background: rgb(238,232,232);
+    background: radial-gradient(circle, rgba(238,232,232,1) 0%, rgba(255,255,255,1) 45%); 
+
+}
+
+
+.cara:nth-child(1){transform: rotateX(90deg) translateZ(-124px);}
+.cara:nth-child(2){transform: rotateY(270deg) translateZ(-124px);}
+.cara:nth-child(3){transform: rotateY(180deg) translateZ(-124px);}
+.cara:nth-child(4){transform: rotateY(0deg)   translateZ(-124px);}
+.cara:nth-child(5){transform: rotateY(90deg)  translateZ(-124px);}
+.cara:nth-child(6){transform: rotateX(270deg) translateZ(-124px);}
+
+
+.cara:nth-child(1){    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+    align-items: center;
+    justify-content: center
+}
+.cara:nth-child(2){    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);;}
+.cara:nth-child(3){    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);;}
+.cara:nth-child(4){    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);;}
+.cara:nth-child(5){    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);;}
+.cara:nth-child(6){    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);;}
+
+
+/*------------------------CARA 1-------------------------------------*/
+#uno{
+    grid-column:3;
+    grid-row: 3;
+
+}
+/*--------------------CARA 2----------------------------------------*/
+#dos{
+    grid-column:2 ;
+    grid-row: 2;
+}
+#tres{
+    grid-column:4 ;
+    grid-row: 4;
+}
+/*--------------------CARA 3----------------------------------------*/
+#cuatro{
+    grid-column:2 ;
+    grid-row: 2;
+}
+#cinco{
+    grid-column:6 ;
+    grid-row: 6;
+}
+#seis{
+    grid-column:10 ;
+    grid-row: 10;
+}
+/*------------------------CARA 4*/
+#siet{
+    grid-column:4;
+    grid-row: 2;
+}
+#ocho{
+    grid-column:2;
+    grid-row: 2;
+}
+#nue{
+    grid-column:2;
+    grid-row: 4;
+}
+#die{
+    grid-column:4;
+    grid-row: 4;
+}
+/*------------------------CARA 5*/
+#onc{
+    grid-column:4;
+    grid-row: 4;
+}
+#doc{
+    grid-column:4;
+    grid-row: 8;
+}
+#trec{
+    grid-column:8;
+    grid-row: 4;
+}
+#cat{
+    grid-column:8;
+    grid-row: 8;
+}
+#quin{
+    grid-column:6;
+    grid-row: 6;
+}
+
+
+/*--------------------CARA 6----------------------------------*/
+#diecs{
+    grid-column:3 ;
+    grid-row: 4;
+}
+
+#dsie{
+    grid-column:6 ;
+    grid-row: 4;
+}
+#doch{
+    grid-column:9 ;
+    grid-row: 4;
+}
+#dnue{
+    grid-column:3 ;
+    grid-row: 9;
+}
+#vien{
+    grid-column:6 ;
+    grid-row: 9;
+}
+#vuno{
+    grid-column:9 ;
+    grid-row: 9;
+}
+
+#lanzarDado{
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    width: 150px;
+    text-align: center;
+    border-radius: 17px;
+    cursor: pointer;
+}
+#lanzarDado:hover{
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    transition: 0.5s;
+}
